@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://thumbs.dreamstime.com/b/blue-abstract-backround-blur-effect-blue-abstract-backround-117426484.jpg)
+    no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav {
+  background-color: rgb(17, 66, 66);
+  padding: 5px 0;
+  width: 100%;
+}
+
+.nav .logo {
+  color: rgb(197, 185, 185);
+  border: 1px solid;
+  border-radius: 10px;
+  background: linear-gradient(rgb(60, 117, 117), #34495e);
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(231, 231, 231);
+  width: auto;
+  padding-bottom: 3px;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  background: linear-gradient(rgb(17, 66, 66), #34495e);
+  font-weight: bold;
+}
+
+.game {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  width: auto;
+  padding: 1px 3px;
+}
+
+.gamesCard {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+}
+
+.gamesCard .card {
+  background: rgb(185, 181, 181);
+  margin: 5px 14px 0 0;
+}
+
+.gamesCard .card:hover {
+  background: rgb(127, 171, 182);
+}
+
+.gamesCard img {
+  width: 95%;
+  height: 95%;
+}
