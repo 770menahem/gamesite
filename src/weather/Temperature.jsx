@@ -1,23 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
-export default function Temperature({ temp, description }) {
+export default function Temperature({ temp: celsius, description }) {
   const [deg, setDeg] = useState("C");
-  const [temperature, setTemp] = useState(temp);
+  const fahrenheit = useRef(((celsius * 9) / 5 + 32).toFixed(1));
+  const temperature = useRef(celsius);
 
   const changeTypeTemp = () => {
+    temperature.current = deg !== "C" ? celsius : fahrenheit.current;
     setDeg(deg === "C" ? "F" : "C");
-    if (temperature === temp) {
-      setTemp(((temp * 9) / 5 + 32).toFixed(1));
-    } else {
-      setTemp(temp);
-    }
   };
 
   return (
     <div>
       <div className="temperature-value">
         <p onClick={changeTypeTemp}>
-          {temperature}°<span>{deg}</span>
+          {temperature.current}°<span>{deg}</span>
         </p>
       </div>
       <div className="temperature-description">
