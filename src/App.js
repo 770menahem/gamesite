@@ -3,9 +3,10 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import Header from "./component/Header";
 import Hangman from "./hangman/Hangman";
 import GameOfLife from "./game of life/GameOfLife";
-import "./App.css";
 import NotFound from "./component/notFound";
 import Games from "./component/games";
+import Weather from "./weather/Weather";
+import "./App.css";
 
 function App() {
   const [gamesCard, setGamesCard] = useState([
@@ -36,6 +37,7 @@ function App() {
         <Switch>
           <Route path="/hangman" component={Hangman} />
           <Route path="/gameOfLife" component={GameOfLife} />
+          <Route path="/weather" component={Weather} />
           <Route path="/notFound" component={NotFound} />
           <Route path="/" exact>
             <Games gamesCard={gamesCard} />

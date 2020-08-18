@@ -7,8 +7,9 @@ export default function Header() {
       <Link className="logo" to="/">
         MYL
       </Link>
-      {/* <Link to={`/hangman`}>Hangman</Link>
-      <Link to={`/gameOfLife`}>Game of life</Link> */}
+      <Link className="weather" to="weather">
+        Weather
+      </Link>
     </nav>
   );
 }
