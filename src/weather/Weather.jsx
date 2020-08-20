@@ -7,7 +7,7 @@ import "./weather.css";
 
 const Weather = () => {
   const [weather, setWeather] = useState(null);
-  const [location, setLocation] = useState("London");
+  const [location, setLocation] = useState("jerusalem");
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -16,11 +16,10 @@ const Weather = () => {
         `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=1ed5211f03c14c276d927db8fc6d02b4`
       )
       .then((res) => {
-        console.log(res.data);
         setWeather(res.data);
         setError(null);
       })
-      .catch((e) => {
+      .catch(() => {
         setError("wrong location");
       });
   }, [location]);
@@ -30,14 +29,17 @@ const Weather = () => {
       {weather ? (
         <div className="container">
           <div className="app-title">Weather</div>
-          {error && <div className="notification">{error}</div>}
           <div className="weather-container">
             <Icon icon={weather.weather[0].icon} />
             <Temperature
               temp={(weather.main.temp - 273).toFixed(1)}
               description={weather.weather[0].description}
             />
-            <Location place={weather.name} setLocation={setLocation} />
+            <Location
+              place={weather.name}
+              error={error}
+              setLocation={setLocation}
+            />
           </div>
         </div>
       ) : (

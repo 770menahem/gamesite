@@ -86,3 +86,17 @@
   text-align: center;
   font-size: 0.8em;
 }
+
+.change-location {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.change-location input {
+  outline: none;
+}
+
+.change-location button {
+  border: solid 1px;
+  background: #707ba1;
+}

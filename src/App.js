@@ -7,6 +7,8 @@ import NotFound from "./component/notFound";
 import Games from "./component/games";
 import Weather from "./weather/Weather";
 import "./App.css";
+import Footer from "./component/Footer";
+import Home from "./component/Home";
 
 function App() {
   const [gamesCard, setGamesCard] = useState([
@@ -39,12 +41,14 @@ function App() {
           <Route path="/gameOfLife" component={GameOfLife} />
           <Route path="/weather" component={Weather} />
           <Route path="/notFound" component={NotFound} />
-          <Route path="/" exact>
+          <Route path="/games" exact>
             <Games gamesCard={gamesCard} />
           </Route>
+          <Route path="/" component={Home} />
           <Redirect to="/notFound" />
         </Switch>
       </div>
+      <Footer />
     </>
   );
 }
