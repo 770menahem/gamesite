@@ -8,6 +8,7 @@ export default function Header() {
   useEffect(() => {
     setLogo({ name: "MYL", to: "/" });
     setTabs([
+      { name: "News", to: "news" },
       { name: "Games", to: "games" },
       {
         name: (

@@ -9,6 +9,7 @@ import Weather from "./weather/Weather";
 import "./App.css";
 import Footer from "./component/Footer";
 import Home from "./component/Home";
+import News from "./component/News";
 
 function App() {
   const [gamesCard, setGamesCard] = useState([
@@ -37,6 +38,7 @@ function App() {
       <Header />
       <div className="game">
         <Switch>
+          <Route path="/news" component={News} />
           <Route path="/hangman" component={Hangman} />
           <Route path="/gameOfLife" component={GameOfLife} />
           <Route path="/weather" component={Weather} />

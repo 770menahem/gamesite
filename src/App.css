@@ -160,3 +160,56 @@ button {
   width: 95%;
   height: 95%;
 }
+
+.news {
+  background: rgba(199, 184, 184, 0.781);
+  overflow: auto;
+  height: 79vh;
+  padding: 5px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-top: 1px solid black;
+  border-left: black 1px solid;
+  padding: 2px;
+}
+
+.news .grid-left {
+  width: 100px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.news .grid-tight {
+  height: 100px;
+  margin: 0 10px;
+  overflow: auto;
+}
+
+.news ::-webkit-scrollbar {
+  width: 3px;
+}
+
+.news ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.news ::-webkit-scrollbar-thumb {
+  background: rgb(116, 115, 115, 0.5);
+}
+
+.news a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.news a:hover {
+  text-decoration: underline;
+  color: #34495e;
+  font: bold;
+}

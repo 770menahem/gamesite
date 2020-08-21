@@ -23,7 +23,17 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
             accusantium dolor dolores, temporibus doloribus alias sequi iure
             accusamus, autem quibusdam, repudiandae obcaecati quidem dolorum
-            quas veritatis hic voluptatibus error soluta.
+            quas veritatis hic voluptatibus error soluta. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Culpa assumenda in repudiandae
+            beatae officia temporibus! Odit doloremque, sapiente non, alias rem
+            cumque, cupiditate aliquam hic quia asperiores iusto pariatur atque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            accusantium dolor dolores, temporibus doloribus alias sequi iure
+            accusamus, autem quibusdam, repudiandae obcaecati quidem dolorum
+            quas veritatis hic voluptatibus error soluta. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Culpa assumenda in repudiandae
+            beatae officia temporibus! Odit doloremque, sapiente non, alias rem
+            cumque, cupiditate aliquam hic quia asperiores iusto pariatur atque.
           </p>
         </div>
       </div>
